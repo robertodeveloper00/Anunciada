@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap');
+
+/* BUTTONS */
+.btn {
+  @apply shadow-md py-3 px-6 rounded-md transition duration-300;
+}
+
+.btn-light {
+  @apply bg-transparent text-white border border-white;
+}
+
+.btn-dark {
+  @apply bg-transparent text-secondary border border-secondary;
+}
+
+/* HEADINGS */
+h1 {
+  @apply text-5xl font-display text-white;
+}
+
+h2 {
+  @apply text-5xl font-display;
+}
+
+h4 {
+  @apply text-lg;
+}
+
+p {
+  @apply text-xl text-secondary;
+}
+
+/* CUSTOM BG */
+
+.bg-cust-hero {
+  background: linear-gradient(rgba(16, 29, 44, 0.4), rgba(16, 29, 44, 0.4)), url(/public/img/hero-img.jpg) no-repeat top right 10%/cover;
+}
+
+.bg-cust-story {
+  background: linear-gradient(rgba(16, 29, 44, 0.7), rgba(17, 29, 44, 0.6)), url(/public/img/ilustracion-1.JPG) no-repeat top 10% left/cover;
+}
+
+.bg-cust-community {
+  background: linear-gradient(rgba(16, 29, 44, 0.7), rgba(16, 29, 44, 0.7)), url(/public/img/foto-grupal.JPG) no-repeat top/cover;
+}
