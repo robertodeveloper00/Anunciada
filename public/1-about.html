@@ -10,14 +10,14 @@
   </head>
   <body class="font-paragraph">
     <!-- HEADER -->
-    <header class="h-screen bg-cust-hero flex flex-col justify-between relative">
+    <header class="h-96 bg-cust-hero--about flex flex-col justify-between items-center relative">
       <!-- NAVIGATION -->
-      <nav class="w-full flex items-center sm:flex-col md:items-center bg-primary-light bg-opacity-60">
-        <a href="public/index.html"><img src="/public/img/logo web bueno.png" alt="Anunciada-Logo" class="p-4 w-56 md:w-96" /></a>
+      <nav class="w-full flex items-center md:items-end md:justify-between bg-primary-light bg-opacity-60">
+        <a href="index.html"><img src="img/logo web bueno.png" alt="Anunciada-Logo" class="p-4 mx-14 w-56 md:w-96" /></a>
         
-        <ul class="hidden sm:flex gap-12 py-4 font-display text-2xl text-white">
+        <ul class="hidden sm:flex gap-12 py-4 mx-14 mb-4 font-display text-2xl text-white">
           <li>
-            <a href="/public/1-about.html">Quienes Somos</a>
+            <a href="#">Quienes Somos</a>
             <ul>
               <li>Historia de la Orden</li>
               <li>Nuestra Comunidad</li>
@@ -39,17 +39,8 @@
         </div>
       </nav>
 
-      <!-- HERO MAIN ELEMENT -->
-      <div class="w-2/5 md:w-2/6 flex flex-col gap-6 items-start ml-8 mb-10 md:ml-20 md:mb-20 lg:ml-28 lg:mb-32">
-        <h1 class="md:text-6xl lg:text-7xl">Vida Monástica Contemplativa</h1>
-        
-        <h4 class="text-white md:text-xl">
-          Ven y descubre junto a nosotras la alegría de ser sólo para Dios,
-          siguiendo el ejemplo de María.
-        </h4>
-
-        <button class="btn btn-light hover:bg-terciary"><a href="#">Aprender Más</a></button>
-      </div>
+      <!-- HERO - ABOUT -- HEADING -->
+      <h1 class="md:text-6xl lg:text-7xl mb-20">Quienes Somos</h1>
     </header>
 
     <!-- LANDING PAGE - ABOUT -->
@@ -71,48 +62,7 @@
         <!-- lANDING PAGE - ABOUT -- IMAGE -->
         <img src="/public/img/Quienes somos - Landing.png" alt="Quienes Somos" class="h-auto w-au"> 
       </div>
-    </section>
-
-    <!-- LANDING PAGE - STORY & COMMUNITY -->
-    <section class="flex flex-col lg:flex-row text-white">
-      <!-- LANDING PAGE - STORY -->
-      <div class="bg-cust-story flex flex-col gap-6 p-11 md:p-32 items-start">
-        <h2>Historia de la Orden</h2>
-
-        <p class="text-white">
-          La Orden de la Virgen María, conocida como de la Anunciada, se fundó en Francia en el año 1502 por Santa Juana de Francia, hija del Rey Luis XI. Desde su niñez, Juana deseaba complacer a Dios. Teniendo solo 7 años un día después de misa, en su oración, preguntó a Dios como podría servirle y agradarle y en su corazón escuchó esta respuesta “antes de tu muerte, fundaras una Orden religiosa en mi honor”…
-        </p>
-
-        <button class="btn btn-light hover:bg-terciary hover:text-white"><a href="#">Leer Más</a></button>
-      </div>
-
-      <!-- LANDING PAGE - COMMUNITY -->
-      <div class="bg-cust-community flex flex-col gap-6 p-11 md:p-32 items-start">
-        <h2>Nuestra Comunidad</h2>
-
-        <p class="text-white">
-          En el año 1980, el obispo de una diócesis del sureste de Francia en los Alpes (Digne), solicitó al monasterio de Thiais, en las afueras de Paris fundar en su diócesis  un monasterio de vida contemplativa ya que ahí no había vida monástica y le parecía a éste que sin vida contemplativa en la diócesis, faltaba algo en la vida eclesial.
-          La comunidad era numerosa así que aceptó y envió un grupo de hermanas...
-        </p>
-
-        <button class="btn btn-light hover:bg-terciary hover:text-white"><a href="#">Leer Más</a></button>
-      </div>
-    </section>
-
-    <!-- LANDING PAGE - JOIN US -->
-    <section class="bg-primary-light">
-      <div class="container px-10 py-16 flex flex-col gap-5 md:gap-12 items-center">
-        <h2>Conviertete en Anunciada <span class="font-paragraph text-2xl md:text-center block mt-2">una invitación a viajar siguiendo a los magos...</span></h2>
-
-        <div class="flex flex-col lg:flex-row lg:gap-8">
-          <div class="mt-4">
-            <h3>Formación</h3>
-            <p class="my-5">Acá podrás aprender más acerca de: <a href="#">Las Características de la Trayectoria de Formación de una Anunciada</a>, <a href="#">La Pasantía de Observación</a>, <a href="#">Duración de las Etapas de Formación</a>, y <a href="#">más</a></p>
-          </div>
-          <img src="/public/img/Reyes Magos.jpeg" alt="Reyes Magos" class="w-full lg:w-1/2">
-        </div>
-      </div>
-    </section>
+    </section> 
 
     <!-- LANDING PAGE - CONTACT -->
     <section class="bg-primary">

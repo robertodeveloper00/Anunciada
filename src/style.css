@@ -45,6 +45,10 @@ p {
   background: linear-gradient(rgba(16, 29, 44, 0.4), rgba(16, 29, 44, 0.4)), url(/public/img/hero-img.jpg) no-repeat top right 10%/cover;
 }
 
+.bg-cust-hero--about {
+  background: linear-gradient(rgba(16, 29, 44, 0.4), rgba(16, 29, 44, 0.4)), url(/public/img/extra-img/james-coleman-QHRZv6PIW4s-unsplash.jpg) no-repeat top 70% right/cover;
+}
+
 .bg-cust-story {
   background: linear-gradient(rgba(16, 29, 44, 0.7), rgba(17, 29, 44, 0.6)), url(/public/img/ilustracion-1.JPG) no-repeat top 10% left/cover;
 }
