@@ -6,29 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css" />
-    <title>Anunciada</title>
+    <title>Anunciada - Quienes Somos</title>
   </head>
   <body class="font-paragraph">
     <!-- HEADER -->
-    <header class="h-96 bg-cust-hero--about flex flex-col justify-between items-center relative">
+    <!-- HERO BACKGROUND -->
+    <header class="h-96 bg-custom-hero--about flex flex-col justify-between items-center relative">
       <!-- NAVIGATION -->
-      <nav class="w-full flex items-center md:items-end md:justify-between bg-primary-light bg-opacity-60">
+      <nav class="w-full flex items-center md:items-end md:justify-between bg-primary bg-opacity-60">
         <a href="index.html"><img src="img/logo web bueno.png" alt="Anunciada-Logo" class="p-4 mx-14 w-56 md:w-96" /></a>
         
         <ul class="hidden sm:flex gap-12 py-4 mx-14 mb-4 font-display text-2xl text-white">
           <li>
-            <a href="#">Quienes Somos</a>
+            <a href="about.html">Quienes Somos</a>
             <ul>
-              <li>Historia de la Orden</li>
-              <li>Nuestra Comunidad</li>
+              <li><a href="#">Historia de la Orden</a></li>
+              <li><a href="#">Nuestra Comunidad</a></li>
             </ul>
           </li>
           <li>
             <a href="#">Formación</a>
             <ul>
-              <li>Trayectoria de Formación</li>
-              <li>Pasantía de Observación:</li>
-              <li>Duración de Formación</li>
+              <li><a href="#">Trayectoria de Formación</a></li>
+              <li><a href="#">Pasantía de Observación</a></li>
+              <li><a href="#">Duración de Formación</a></li>
             </ul>
           </li>
           <li><a href="#">Contacto</a></li>
@@ -43,28 +44,51 @@
       <h1 class="md:text-6xl lg:text-7xl mb-20">Quienes Somos</h1>
     </header>
 
-    <!-- LANDING PAGE - ABOUT -->
+    <!-- ABOUT PAGE - CONTENT -->
+    <!-- ABOUT PAGE - SECTION ONE -->
     <section class="bg-primary-light">
       <div class="container bg-primary-light flex flex-col-reverse px-10 lg:flex-row gap-20 py-16">
-        <!-- lANDING PAGE - ABOUT -- TEXT -->
         <div class="flex flex-col gap-4 items-start lg:mt-8">
-          <h2>Quienes Somos</h2>
-
+          <h2>La Orden de la Virgen María</h2>
           <p>
-            La Orden de la Virgen María es una Orden monástica (contemplativa de
+             es una Orden monástica (contemplativa de
             clausura), fundada en 1502 por Santa Juana de Francia y por el
             franciscano Beato Gabriel-María, para el agrado de Dios, tomando a
             María como modelo tal y como aparece en el Evangelio.
           </p>
-
-          <button class="btn btn-dark hover:bg-terciary hover:text-white"><a href="#">Leer Más</a></button>
         </div>
-        <!-- lANDING PAGE - ABOUT -- IMAGE -->
-        <img src="/public/img/Quienes somos - Landing.png" alt="Quienes Somos" class="h-auto w-au"> 
+        <img src="img/Quienes somos - Landing.png" alt="Quienes Somos" > 
       </div>
     </section> 
 
-    <!-- LANDING PAGE - CONTACT -->
+    <!-- ABOUT PAGE - SECTION TWO -->
+    <section class="bg-primary-light">
+      <div class="container flex gap-8 py-8 px-10 lg:px-0">
+        <div class="flex flex-col gap-4">
+          <h3>Misión</h3>
+          <p>Nuestra misión en la iglesia es el rezo del Oficio Divino Coral y la ofrenda de la propia vida para la salvación del mundo.</p>
+        </div>
+
+        <div class="flex flex-col gap-4">
+          <h3>Nuestra Vida</h3>
+          <p>Nuestra vida es una vida sencilla de silencio, oración, trabajo, pobreza, obediencia y castidad vividas en una profunda Vida Fraterna.</p>
+        </div>
+      </div>
+
+      <div class="container flex flex-col gap-8 pt-8 pb-16 px-10 lg:px-0">
+        <div class="flex flex-col gap-4">
+          <h3>Espiritualidad</h3>
+          <p>Seguir a Cristo viviendo el Evangelio como lo vivió la Virgen María y aprender de ella a buscar en todo cómo agradar a Dios: tal es la espiritualidad de la Anunciada en el corazón de la Iglesia y del mundo. <br> <br>
+          <span><i>"Oh María, Vírgen y Madre de Jesús, dame pensar, decir y hacer lo que más agrade a Dios y a tí mísma"</i> <br> -Santa Juana de Francia</span></p>
+        </div>
+        <div class="flex flex-col gap-4">
+          <h3>Más</h3>
+          <p><a href="#">"Historia de la Orden"</a>, <a href="#">"Nuestra comunidad"</a>, <a href="#">"Conviertete en Anunciada"</a></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT PAGE - CONTACT -->
     <section class="bg-primary">
       <div class="container px-10 py-16 flex flex-col gap-12 items-center">
         <h2>¿A quién contactar? <span class="font-paragraph text-2xl md:text-center block mt-2"> ¿A quién hacer preguntas? <br> Con la madre María Ancila</span></h2>
@@ -79,7 +103,7 @@
 
     <!-- FOOTER -->
     <footer class="bg-secondary flex justify-between items-start px-14 py-10 md:px-24 md:py-20">
-      <img src="/public/img/logo web bueno.png" alt="Anunciada-Logo" class="object-contain lg:mr-8 lg:w-4/12 xl:3/12 h-auto">
+      <img src="img/logo web bueno.png" alt="Anunciada-Logo" class="object-contain lg:mr-8 lg:w-4/12 xl:3/12 h-auto">
 
       <div class="hidden lg:flex text-white text-xl gap-12">
         <ul>

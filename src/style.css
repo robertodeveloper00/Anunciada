@@ -41,22 +41,64 @@ p {
 
 /* CUSTOM BG */
 
-.bg-cust-hero {
-  background: linear-gradient(rgba(16, 29, 44, 0.4), rgba(16, 29, 44, 0.4)), url(/public/img/hero-img.jpg) no-repeat top right 10%/cover;
+.bg-custom-hero {
+  background: linear-gradient(rgba(16, 29, 44, 0.4), rgba(16, 29, 44, 0.4)), url(img/hero-img.jpg) no-repeat top right 10%/cover;
 }
 
-.bg-cust-hero--about {
-  background: linear-gradient(rgba(16, 29, 44, 0.4), rgba(16, 29, 44, 0.4)), url(/public/img/extra-img/james-coleman-QHRZv6PIW4s-unsplash.jpg) no-repeat top 70% right/cover;
+.bg-custom-hero--about {
+  background: linear-gradient(rgba(16, 29, 44, 0.4), rgba(16, 29, 44, 0.4)), url(img/extra-img/james-coleman-QHRZv6PIW4s-unsplash.jpg) no-repeat top 70% right/cover;
 }
 
-.bg-cust-story {
-  background: linear-gradient(rgba(16, 29, 44, 0.7), rgba(17, 29, 44, 0.6)), url(/public/img/ilustracion-1.JPG) no-repeat top 10% left/cover;
+.bg-custom-story {
+  background: linear-gradient(rgba(16, 29, 44, 0.7), rgba(17, 29, 44, 0.6)), url(img/ilustracion-1.JPG) no-repeat top 10% left/cover;
 }
 
-.bg-cust-community {
-  background: linear-gradient(rgba(16, 29, 44, 0.7), rgba(16, 29, 44, 0.7)), url(/public/img/foto-grupal.JPG) no-repeat top/cover;
+.bg-custom-community {
+  background: linear-gradient(rgba(16, 29, 44, 0.7), rgba(16, 29, 44, 0.7)), url(img/foto-grupal.JPG) no-repeat top/cover;
 }
+
+/* .bg-custom-footer {
+  background: rgb(76,175,214);
+  background: linear-gradient(141deg, rgba(76,175,214,1) 0%, rgba(24,54,66,1) 42%);
+} */
 
 footer li {
   @apply mb-1;
 }
+
+/* Navigation */
+
+nav ul {
+  position: relative;
+}
+
+nav ul li {
+  margin: 1rem 0;
+} 
+
+nav ul li a {
+  padding: .6rem .9rem;
+  /* Find out whther you can get these closer together */
+}
+
+nav ul ul {
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+
+  @apply font-paragraph text-xl;
+}
+
+nav ul li:hover {
+  background-color: rgba(16, 29, 44, 0.7);
+  transition: all .4s;
+}
+
+nav ul li:hover > ul {
+  opacity: 1;
+  visibility: visible;
+  background-color: rgba(16, 29, 44, 0.7);
+  border-bottom: 1px solid rgba(0, 0, 0, .4);
+  transition: all .4s;
+} 
+
