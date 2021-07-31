@@ -66,39 +66,25 @@ footer li {
   @apply mb-1;
 }
 
-/* Navigation */
+/* NAVIGATION */
 
-nav ul {
-  position: relative;
-}
-
-nav ul li {
-  margin: 1rem 0;
-} 
-
-nav ul li a {
-  padding: .6rem .9rem;
-  /* Find out whther you can get these closer together */
-}
-
-nav ul ul {
-  position: absolute;
+.nav-visibility-off {
   opacity: 0;
   visibility: hidden;
-
-  @apply font-paragraph text-xl;
 }
 
-nav ul li:hover {
-  background-color: rgba(16, 29, 44, 0.7);
-  transition: all .4s;
-}
-
-nav ul li:hover > ul {
+.nav-visibility-on:hover > ul {
   opacity: 1;
   visibility: visible;
-  background-color: rgba(16, 29, 44, 0.7);
-  border-bottom: 1px solid rgba(0, 0, 0, .4);
   transition: all .4s;
-} 
+}
 
+.nav-visibility-on:hover > a {
+  @apply bg-secondary;
+}
+
+/* LAS DIEZ VIRTUDES TAGLINE */
+.tagline-pureza::after {
+  content: "Pureza";
+  display: block;
+}

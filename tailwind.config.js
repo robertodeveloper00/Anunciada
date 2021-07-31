@@ -3,6 +3,10 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
+      screens: {
+        '3xl': '1600px',
+      },
+
       colors: {
         'primary-light': '#FAEED7',
         primary: '#FCDA99',

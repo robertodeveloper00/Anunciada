@@ -8,39 +8,71 @@
     <link rel="stylesheet" href="style.css" />
     <title>Anunciada</title>
   </head>
+  <!-- Class Order Best Practice (i.e,. 1. positioning/visibility 2. box model 3. borders 4. backgrounds 5. typography 6. other visual adjustments) -->
   <body class="font-paragraph">
     <!-- HEADER -->
-    <header class="h-screen bg-custom-hero flex flex-col justify-between relative">
-      <!-- NAVIGATION -->
-      <nav class="w-full flex items-center sm:flex-col md:items-center bg-primary bg-opacity-60">
-        <a href="index.html"><img src="img/logo web bueno.png" alt="Anunciada-Logo" class=" w-56 md:w-96" /></a>
-        
-        <ul class="hidden sm:flex gap-12 py-4 font-display text-2xl text-white main-nav-ul">
-          <li>
-            <a href="about.html">Quienes Somos</a>
-            <ul>
-              <li><a href="#">Historia de la Orden</a></li>
-              <li><a href="#">Nuestra Comunidad</a></li>
-            </ul>
-          </li>
-          <li>
-            <a href="#">Formación</a>
-            <ul>
-              <li><a href="#">Trayectoria de Formación</a></li>
-              <li><a href="#">Pasantía de Observación</a></li>
-              <li><a href="#">Duración de Formación</a></li>
-            </ul>
-          </li>
-          <li><a href="#">Contacto</a></li>
-        </ul>
+    <header class="flex flex-col justify-between relative min-h-screen bg-custom-hero ">
+      <!-- NAVBAR -->
+      <nav class="bg-primary bg-opacity-70 relative">
+        <div class="px-8 xl:px-24 mx-auto">
+          <div class="flex justify-between">
+            <!-- LOGO -->
+            <a href="index.html"><img src="img/logo web bueno.png" alt="Logo Anunciada" class="w-60 lg:w-96 mb-6 lg:mb-4 mt-3 "></a>
 
-        <div class="flex sm:hidden flex-1 justify-end mr-6 text-white">
-          <i class="fas fa-bars text-2xl"></i>
+            <!-- PRIMARY NAV -->
+            <div class="hidden lg:flex self-end py-8 space-x-2 text-white text-xl lg:text-2xl">
+              <a href="index.html" class="block px-4 py-2 hover:bg-secondary rounded-lg whitespace-nowrap">Inicio</a>
+
+              <div class="relative nav-visibility-on">
+                <a href="about.html" class="block px-4 py-2 rounded-t-lg whitespace-nowrap">Quienes Somos</a>
+                <ul class="nav-visibility-off absolute space-y-3 bg-secondary bg-opacity-90 rounded-b-lg rounded-tr-lg whitespace-nowrap">
+                  <li><a href="story.html" class="block px-4 py-2 hover:bg-primary hover:bg-opacity-30">Historia de la Orden</a></li>
+                  <li><a href="community.html" class="block px-4 py-2 hover:bg-primary hover:bg-opacity-30 rounded-b-lg">Nuestra Comunidad</a></li>
+                </ul>
+              </div>
+
+              <div class="relative nav-visibility-on">
+                <a href="#" class="block px-4 py-2 rounded-t-lg whitespace-nowrap">Formación</a>
+                <ul class="nav-visibility-off absolute space-y-3 bg-secondary bg-opacity-90 rounded-b-lg rounded-tr-lg whitespace-nowrap">
+                  <li><a href="#" class="block px-4 py-2 hover:bg-primary hover:bg-opacity-30">Trayectoria de Formación</a></li>
+                  <li><a href="#" class="block px-4 py-2 hover:bg-primary hover:bg-opacity-30">Pasantía de Observación</a></li>
+                  <li><a href="#" class="block px-4 py-2 hover:bg-primary hover:bg-opacity-30 rounded-b-lg">Duración de Formación</a></li>
+                </ul>
+              </div>
+
+              <a href="#" class="block px-4 py-2 hover:bg-secondary rounded-lg whitespace-nowrap">Contacto</a>
+            </div>
+
+            <!-- MOBILE BUTTON -->
+            <div class="lg:hidden flex self-center text-white">
+              <button class="mobile-menu-button">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+              </button>
+            </div>
+
+          </div>
         </div>
+      <!-- MOBILE MENU -->
+      <div class="mobile-menu hidden lg:hidden absolute w-full bg-secondary bg-opacity-95 font-paragraph text-white text-2xl ">
+        <a href="index.html" class="block p-4 hover:bg-primary hover:bg-opacity-30">Inicio</a>
+
+        <a href="about.html" class="block p-4 hover:bg-primary hover:bg-opacity-30">Quienes Somos</a>
+        <a href="story.html" class="block p-4 pl-10 hover:bg-primary hover:bg-opacity-30">- Historia de la Orden</a>
+        <a href="community.html" class="block p-4 pl-10 hover:bg-primary hover:bg-opacity-30">- Nuestra Comunidad</a>
+
+        <a href="#" class="block p-4 hover:bg-primary hover:bg-opacity-30">Formación</a>
+        <a href="#" class="block p-4 pl-10 hover:bg-primary hover:bg-opacity-30">- Trayectoria de Formación</a>
+        <a href="#" class="block p-4 pl-10 hover:bg-primary hover:bg-opacity-30">- Pasantía de Observación</a>
+        <a href="#" class="block p-4 pl-10 hover:bg-primary hover:bg-opacity-30">- Duración de Formación</a>
+
+        <a href="#" class="block p-4 hover:bg-primary hover:bg-opacity-30">Contacto</a>
+      </div>
       </nav>
 
       <!-- HERO MAIN ELEMENT -->
-      <div class="w-2/5 md:w-2/6 flex flex-col gap-6 items-start ml-8 mb-10 md:ml-20 md:mb-20 lg:ml-28 lg:mb-32">
+      <div class="w-2/5 md:w-2/6 flex flex-col gap-6 md:items-start m-8 md:m-16 3xl:m-28">
         <h1 class="md:text-6xl lg:text-7xl">Vida Monástica Contemplativa</h1>
         
         <h4 class="text-white md:text-xl">
@@ -48,15 +80,15 @@
           siguiendo el ejemplo de María.
         </h4>
 
-        <button class="btn btn-light hover:bg-terciary"><a href="#">Aprender Más</a></button>
+        <button class="btn btn-light hover:bg-terciary"><a href="about.html">Aprender Más</a></button>
       </div>
     </header>
 
     <!-- LANDING PAGE - ABOUT -->
     <section class="bg-primary-light">
-      <div class="container bg-primary-light flex flex-col-reverse px-10 lg:flex-row gap-20 py-16">
+      <div class="container flex flex-col-reverse px-10 lg:flex-row gap-20 py-16 bg-primary-light">
         <!-- lANDING PAGE - ABOUT -- TEXT -->
-        <div class="flex flex-col gap-4 items-start lg:mt-8">
+        <div class="flex flex-col gap-4 md:items-start lg:mt-8">
           <h2>Quienes Somos</h2>
 
           <p>
@@ -74,20 +106,20 @@
     </section>
 
     <!-- LANDING PAGE - STORY & COMMUNITY -->
-    <section class="flex flex-col lg:flex-row text-white">
+    <section class="flex flex-col xl:flex-row p-8 gap-8 bg-primary text-white">
       <!-- LANDING PAGE - STORY -->
-      <div class="bg-custom-story flex flex-col gap-6 p-11 md:p-32 items-start">
+      <div class="flex flex-col gap-6 p-11 md:p-32 md:items-start bg-custom-story">
         <h2>Historia de la Orden</h2>
 
         <p class="text-white">
           La Orden de la Virgen María, conocida como de la Anunciada, se fundó en Francia en el año 1502 por Santa Juana de Francia, hija del Rey Luis XI. Desde su niñez, Juana deseaba complacer a Dios. Teniendo solo 7 años un día después de misa, en su oración, preguntó a Dios como podría servirle y agradarle y en su corazón escuchó esta respuesta “antes de tu muerte, fundaras una Orden religiosa en mi honor”…
         </p>
 
-        <button class="btn btn-light hover:bg-terciary hover:text-white"><a href="#">Leer Más</a></button>
+        <button class="btn btn-light hover:bg-terciary hover:text-white"><a href="story.html">Leer Más</a></button>
       </div>
 
       <!-- LANDING PAGE - COMMUNITY -->
-      <div class="bg-custom-community flex flex-col gap-6 p-11 md:p-32 items-start">
+      <div class="flex flex-col gap-6 p-11 md:p-32 md:items-start bg-custom-community ">
         <h2>Nuestra Comunidad</h2>
 
         <p class="text-white">
@@ -95,14 +127,14 @@
           La comunidad era numerosa así que aceptó y envió un grupo de hermanas...
         </p>
 
-        <button class="btn btn-light hover:bg-terciary hover:text-white"><a href="#">Leer Más</a></button>
+        <button class="btn btn-light hover:bg-terciary hover:text-white"><a href="community.html">Leer Más</a></button>
       </div>
     </section>
 
     <!-- LANDING PAGE - JOIN US -->
     <section class="bg-primary-light">
-      <div class="container px-10 py-16 flex flex-col gap-5 md:gap-12 items-center">
-        <h2>Conviertete en Anunciada <span class="font-paragraph text-2xl md:text-center block mt-2">una invitación a viajar siguiendo a los magos...</span></h2>
+      <div class="container flex flex-col gap-5 md:gap-12 px-10 py-16 items-center">
+        <h2>Conviertete en Anunciada <span class="block mt-2 font-paragraph text-2xl md:text-center">una invitación a viajar siguiendo a los magos...</span></h2>
 
         <div class="flex flex-col lg:flex-row lg:gap-8">
           <div class="mt-4">
@@ -115,42 +147,44 @@
     </section>
 
     <!-- LANDING PAGE - CONTACT -->
-    <section class="bg-primary">
-      <div class="container px-10 py-16 flex flex-col gap-12 items-center">
-        <h2>¿A quién contactar? <span class="font-paragraph text-2xl md:text-center block mt-2"> ¿A quién hacer preguntas? <br> Con la madre María Ancila</span></h2>
+    <section class="grid grid-rows-2 justify-items-center py-10 bg-primary-light">
+      <h2 class="text-5xl">¿A quién contactar?</h2>
+      <p class="block text-2xl text-center">¿A quién hacer preguntas? <br> Con la madre María Ancila</p>
 
-        <ul class="text-terciary flex flex-col md:flex-row text-3xl gap-14">
-          <li>+(506) 2431-4914</li>
-          <li>+(506) 8389-3373</li>
-          <li>ancila@ice.co.cr</li>
-        </ul>        
-      </div>
+      <ul class="flex flex-col lg:flex-row gap-14 items-center pb-8 pt-12 text-terciary text-3xl">
+        <li><a href="tel:+(506) 2431-4914">+(506) 2431-4914</a></li>
+        <li><a href="tel:+(506) 8389-3373">+(506) 8389-3373</a></li>
+        <li><a href="mailto:ancila@ice.co.cr">ancila@ice.co.cr</a></li>
+      </ul> 
+
     </section>
 
     <!-- FOOTER -->
-    <footer class="bg-secondary flex justify-between items-start px-14 py-10 md:px-24 md:py-20">
+    <footer class="flex justify-between items-start px-14 py-10 md:px-24 md:py-10 bg-primary">
       <img src="img/logo web bueno.png" alt="Anunciada-Logo" class="object-contain lg:mr-8 lg:w-4/12 xl:3/12 h-auto">
 
-      <div class="hidden lg:flex text-white text-xl gap-12">
+      <div class="hidden lg:flex text-secondary text-xl gap-12">
         <ul>
-          <li class="font-display text-2xl"><a href="">Quienes Somos</a></li>
-          <li><a href="">Historia de la Orden</a></li>
-          <li><a href="">Nuestra Comunidad</a></li>
+          <li class="text-2xl"><a href="about.html">Quienes Somos</a></li>
+          <li><a href="story.html">Historia de la Orden</a></li>
+          <li><a href="community.html">Nuestra Comunidad</a></li>
         </ul>
         <ul>
-          <li class="font-display text-2xl"><a href="">Formación</a></li>
+          <li class="text-2xl"><a href="">Formación</a></li>
           <li><a href="">Trayectoria</a></li>
           <li><a href="">Pasantía de Observación</a></li>
           <li><a href="">Duración de la Formación</a></li>
           <li><a href="">Conviértete en Anunciada</a></li>
         </ul>
         <ul>
-          <li class="font-display text-2xl"><a href="">Contacto</a></li>
-          <li><a href="">+(506) 2431-4914</a></li>
-          <li><a href="">+(506) 8389-3373</a></li>
-          <li><a href="">ancila@ice.co.cr</a></li>
+          <li class="text-2xl"><a href="">Contacto</a></li>
+          <li><a href="tel:+(506) 2431-4914">+(506) 2431-4914</a></li>
+          <li><a href="tel:+(506) 8389-3373">+(506) 8389-3373</a></li>
+          <li><a href="mailto:ancila@ice.co.cr">ancila@ice.co.cr</a></li>
         </ul>
       </div>
     </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>
