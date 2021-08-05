@@ -129,3 +129,11 @@ footer li {
 .cust-img-padding img {
   @apply pb-2;
 }
+
+/* CUSTOM TEXT COLOR SELECTION */
+
+::selection {
+  color: whitesmoke;
+  background: #183642;
+  /* Color secondary */
+}
