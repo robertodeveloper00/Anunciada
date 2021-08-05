@@ -20,15 +20,15 @@
 
 /* HEADINGS */
 h1 {
-  @apply text-5xl font-display text-white;
+  @apply text-4xl font-display text-white;
 }
 
 h2 {
-  @apply text-5xl font-display;
+  @apply text-4xl font-display;
 }
 
 h3 {
-  @apply text-4xl font-display;
+  @apply text-3xl font-display;
 }
 
 h4 {
@@ -40,25 +40,30 @@ p {
 }
 
 a:hover {
-  text-decoration: underline rgba(48, 109, 133, 0.502); 
+  text-decoration: underline rgba(48, 109, 133, 0.502);
 }
 
 /* CUSTOM BG */
 
 .bg-custom-hero {
-  background: linear-gradient(rgba(16, 29, 44, 0.4), rgba(16, 29, 44, 0.4)), url(img/hero-img.jpg) no-repeat top right 10%/cover;
+  background: linear-gradient(rgba(16, 29, 44, 0.4), rgba(16, 29, 44, 0.4)),
+    url(img/hero-img.jpg) no-repeat top right 10% / cover;
 }
 
 .bg-custom-hero--about {
-  background: linear-gradient(rgba(16, 29, 44, 0.4), rgba(16, 29, 44, 0.4)), url(img/extra-img/james-coleman-QHRZv6PIW4s-unsplash.jpg) no-repeat top 70% right/cover;
+  background: linear-gradient(rgba(16, 29, 44, 0.4), rgba(16, 29, 44, 0.4)),
+    url(img/extra-img/james-coleman-QHRZv6PIW4s-unsplash.jpg) no-repeat top 70%
+      right/cover;
 }
 
 .bg-custom-story {
-  background: linear-gradient(rgba(16, 29, 44, 0.7), rgba(17, 29, 44, 0.6)), url(img/ilustracion-1.JPG) no-repeat top 10% left/cover;
+  background: linear-gradient(rgba(16, 29, 44, 0.7), rgba(17, 29, 44, 0.6)),
+    url(img/ilustracion-1.JPG) no-repeat top 10% left/cover;
 }
 
 .bg-custom-community {
-  background: linear-gradient(rgba(16, 29, 44, 0.7), rgba(16, 29, 44, 0.7)), url(img/foto-grupal.JPG) no-repeat top/cover;
+  background: linear-gradient(rgba(16, 29, 44, 0.7), rgba(16, 29, 44, 0.7)),
+    url(img/foto-grupal.JPG) no-repeat top/cover;
 }
 
 footer li {
@@ -75,11 +80,52 @@ footer li {
 .nav-visibility-on:hover > ul {
   opacity: 1;
   visibility: visible;
-  transition: all .4s;
+  transition: all 0.4s;
 }
 
 .nav-visibility-on:hover > a {
   @apply bg-secondary rounded-b-none;
 }
 
+/* MOBILE MENU */
 
+@keyframes fade-in {
+  from {
+    visibility: hidden;
+    opacity: 0;
+  }
+  1% {
+    visibility: visible;
+    opacity: 0;
+  }
+  to {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+.fade-in {
+  animation: fade-in 200ms ease-in-out forwards;
+}
+
+@keyframes fade-out {
+  from {
+    visibility: visible;
+    opacity: 1;
+  }
+  99% {
+    visibility: visible;
+    opacity: 0;
+  }
+  to {
+    visibility: hidden;
+    opacity: 0;
+  }
+}
+.fade-out {
+  animation: fade-out 200ms ease-in-out forwards;
+}
+
+/* CUSTOM UTILITY CLASSES */
+.cust-img-padding img {
+  @apply pb-2;
+}
