@@ -1,8 +1,23 @@
-"use strict";
+'use strict';
+///////////////////////
+// MOBILE MENU
 
 // SELECTORS
-const btn = document.querySelector('button.mobile-menu-button');
+const btnHamburger = document.querySelector('button.mobile-menu-button');
 const menu = document.querySelector('.mobile-menu');
 
 // EVENT LISTENERS
-btn.addEventListener('click', () => menu.classList.toggle('hidden'));
+btnHamburger.addEventListener('click', function () {
+  if (menu.classList.contains('hidden')) {
+    // Open Hamburger Menu
+    menu.classList.remove('fade-out', 'hidden');
+    menu.classList.add('fade-in');
+  } else {
+    // Close Hamburger Menu
+    menu.classList.remove('fade-in');
+    menu.classList.add('fade-out');
+    setTimeout(() => {
+      menu.classList.add('hidden');
+    }, 500);
+  }
+});

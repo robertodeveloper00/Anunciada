@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Anunciada - Quienes Somos</title>
+  </head>
+  <body class="font-paragraph">
+    <!-- HEADER -->
+    <!-- HERO BACKGROUND -->
+    <header class="h-72 md:h-96 bg-custom-hero--about flex flex-col justify-between">
+      <!-- NAVIGATION -->
+      <nav class="bg-primary bg-opacity-70 relative">
+        <div class="px-8 xl:px-24 mx-auto">
+          <div class="flex justify-between">
+            <!-- LOGO -->
+            <a href="index.html"><img src="img/logo web bueno.png" alt="Logo Anunciada" class="w-60 lg:w-96 mb-6 lg:mb-4 mt-3 "></a>
+
+            <!-- PRIMARY NAV -->
+            <div class="hidden lg:flex self-end py-8 space-x-2 text-white text-xl lg:text-2xl">
+              <a href="index.html" class="block px-4 py-2 hover:bg-secondary rounded-lg whitespace-nowrap">Inicio</a>
+
+              <div class="relative nav-visibility-on">
+                <a href="quienesSomos.html" class="block px-4 py-2 rounded-t-lg whitespace-nowrap"><span class="absolute -left-1.5 text-white text-2xl  font-medium">&#11166;</span> Quienes Somos</a>
+                <ul class="nav-visibility-off absolute space-y-3 bg-secondary bg-opacity-90 rounded-b-lg rounded-tr-lg whitespace-nowrap">
+                  <li><a href="historia.html" class="block px-4 py-2 hover:bg-primary hover:bg-opacity-30">Historia de la Orden</a></li>
+                  <li><a href="comunidad.html" class="block px-4 py-2 hover:bg-primary hover:bg-opacity-30 rounded-b-lg">Nuestra Comunidad</a></li>
+                </ul>
+              </div>
+
+              <div class="relative nav-visibility-on">
+                <a href="#" class="block px-4 py-2 rounded-t-lg whitespace-nowrap">Formación</a>
+                <ul class="nav-visibility-off absolute space-y-3 bg-secondary bg-opacity-90 rounded-b-lg rounded-tr-lg whitespace-nowrap">
+                  <li><a href="#" class="block px-4 py-2 hover:bg-primary hover:bg-opacity-30">Trayectoria de Formación</a></li>
+                  <li><a href="#" class="block px-4 py-2 hover:bg-primary hover:bg-opacity-30">Pasantía de Observación</a></li>
+                  <li><a href="#" class="block px-4 py-2 hover:bg-primary hover:bg-opacity-30 rounded-b-lg">Duración de Formación</a></li>
+                </ul>
+              </div>
+
+              <a href="#" class="block px-4 py-2 hover:bg-secondary rounded-lg whitespace-nowrap">Contacto</a>
+            </div>
+
+            <!-- MOBILE BUTTON -->
+            <div class="lg:hidden flex self-center text-white">
+              <button class="mobile-menu-button">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+              </button>
+            </div>
+
+          </div>
+        </div>
+      <!-- MOBILE MENU -->
+        <div class="mobile-menu hidden lg:hidden absolute w-full bg-secondary bg-opacity-95 font-paragraph text-white text-2xl ">
+          <a href="index.html" class="block p-4 pl-10 hover:bg-primary hover:bg-opacity-30">Inicio</a>
+
+          <a href="quienesSomos.html" class="block p-4 pl-10 hover:bg-primary hover:bg-opacity-30">Quienes Somos</a>
+          <a href="historia.htmlw" class="block p-4 pl-14 hover:bg-primary hover:bg-opacity-30">- Historia de la Orden</a>
+          <a href="comunidad.html" class="block p-4 pl-14 hover:bg-primary hover:bg-opacity-30">- Nuestra Comunidad</a>
+
+          <a href="#" class="block p-4 pl-10 hover:bg-primary hover:bg-opacity-30">Formación</a>
+          <a href="#" class="block p-4 pl-14 hover:bg-primary hover:bg-opacity-30">- Trayectoria de Formación</a>
+          <a href="#" class="block p-4 pl-14 hover:bg-primary hover:bg-opacity-30">- Pasantía de Observación</a>
+          <a href="#" class="block p-4 pl-14 hover:bg-primary hover:bg-opacity-30">- Duración de Formación</a>
+
+          <a href="#" class="block p-4 pl-10 hover:bg-primary hover:bg-opacity-30">Contacto</a>
+        </div>
+      </nav>
+
+      <!-- HERO - QUIENES SOMOS -- HEADING -->
+      <h1 class="self-center md:text-6xl lg:text-7xl mb-12 md:mb-20">Quienes Somos</h1>
+    </header>
+
+    <!-- QUIENES SOMOS PAGE - CONTENT -->
+    <!-- QUIENES SOMOS PAGE - SECTION ONE -->
+    <section class="bg-primary-light">
+      <div class="container bg-primary-light flex flex-col-reverse px-10 lg:flex-row gap-20 py-16">
+        <div class="flex flex-col gap-4 items-start lg:mt-8">
+          <h2>La Orden de la Virgen María</h2>
+          <p>
+             es una Orden monástica (contemplativa de
+            clausura), fundada en 1502 por Santa Juana de Francia y por el
+            franciscano Beato Gabriel-María, para el agrado de Dios, tomando a
+            María como modelo tal y como aparece en el Evangelio.
+          </p>
+        </div>
+        <img src="img/Quienes somos - Landing.png" alt="Quienes Somos" > 
+      </div>
+    </section> 
+
+    <!-- QUIENES SOMOS PAGE - SECTION TWO -->
+    <section class="bg-primary-light">
+      <div class="container flex gap-8 py-8 px-10 lg:px-0">
+        <div class="flex flex-col gap-4">
+          <h3>Misión</h3>
+          <p>Nuestra misión en la iglesia es el rezo del Oficio Divino Coral y la ofrenda de la propia vida para la salvación del mundo.</p>
+        </div>
+
+        <div class="flex flex-col gap-4">
+          <h3>Nuestra Vida</h3>
+          <p>Nuestra vida es una vida sencilla de silencio, oración, trabajo, pobreza, obediencia y castidad vividas en una profunda Vida Fraterna.</p>
+        </div>
+      </div>
+
+      <div class="container flex flex-col gap-8 pt-8 pb-16 px-10 lg:px-0">
+        <div class="flex flex-col gap-4">
+          <h3>Espiritualidad</h3>
+          <p>Seguir a Cristo viviendo el Evangelio como lo vivió la Virgen María y aprender de ella a buscar en todo cómo agradar a Dios: tal es la espiritualidad de la Anunciada en el corazón de la Iglesia y del mundo. <br> <br>
+          <span><i>"Oh María, Vírgen y Madre de Jesús, dame pensar, decir y hacer lo que más agrade a Dios y a tí mísma"</i> <br> -Santa Juana de Francia</span></p>
+        </div>
+        <div class="flex flex-col gap-4 px-8">
+          <h3>Más</h3>
+          <p><a href="#">"Historia de la Orden"</a>, <a href="#">"Nuestra comunidad"</a>, <a href="#">"Conviertete en Anunciada"</a></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="grid grid-rows-2 justify-items-center py-0 md:py-10 bg-primary-light">
+      <h2 class="md:text-5xl">¿A quién contactar?</h2>
+      <p class="block text-2xl text-center">¿A quién hacer preguntas? <br> Con la madre María Ancila</p>
+
+      <ul class="flex flex-col lg:flex-row gap-14 items-center pb-8 pt-12 text-terciary text-3xl">
+        <li><a href="tel:+(506) 2431-4914">+(506) 2431-4914</a></li>
+        <li><a href="tel:+(506) 8389-3373">+(506) 8389-3373</a></li>
+        <li><a href="mailto:ancila@ice.co.cr">ancila@ice.co.cr</a></li>
+      </ul> 
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="flex justify-between items-start px-14 py-10 md:px-24 md:py-10 bg-primary">
+      <img src="img/logo web bueno.png" alt="Anunciada-Logo" class="object-contain lg:mr-8 lg:w-4/12 xl:3/12 h-auto">
+
+      <div class="hidden lg:flex text-secondary text-xl gap-12">
+        <ul>
+          <li class="text-2xl"><a href="quienesSomos.html">Quienes Somos</a></li>
+          <li><a href="historia.html">Historia de la Orden</a></li>
+          <li><a href="comunidad.html">Nuestra Comunidad</a></li>
+        </ul>
+        <ul>
+          <li class="text-2xl"><a href="">Formación</a></li>
+          <li><a href="">Trayectoria</a></li>
+          <li><a href="">Pasantía de Observación</a></li>
+          <li><a href="">Duración de la Formación</a></li>
+          <li><a href="">Conviértete en Anunciada</a></li>
+        </ul>
+        <ul>
+          <li class="text-2xl"><a href="">Contacto</a></li>
+          <li><a href="tel:+(506) 2431-4914">+(506) 2431-4914</a></li>
+          <li><a href="tel:+(506) 8389-3373">+(506) 8389-3373</a></li>
+          <li><a href="mailto:ancila@ice.co.cr">ancila@ice.co.cr</a></li>
+        </ul>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
