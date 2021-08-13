@@ -75,13 +75,13 @@
       <h1 class="self-center text-center md:text-6xl lg:text-7xl mb-12 md:mb-20">Contacto</h1>
     </header>
 
-    <!-- CONTACT -->
+    <!-- 1- CTA CONTACTO -->
     <section class="grid grid-rows-2 justify-items-center pt-16 pb-8 bg-primary-light">
       <h2 class="md:text-5xl">¿A quién contactar?</h2>
       <p class="block text-2xl text-center">¿A quién hacer preguntas? <br> Con la madre María Ancila</p>
     </section>
 
-    <!-- FORMA DE CONTACTO -->
+    <!-- 2- FORMA DE CONTACTO -->
     <section class="bg-primary-light">
       <div class="container flex flex-col gap-8 pb-16 px-10 lg:px-0 text-3xl text-secondary">
         <form action="https://formsubmit.co/ancila@ice.co.cr" method="POST" class="flex flex-col gap-8 p-8 rounded-lg bg-primary">
@@ -98,16 +98,24 @@
             <textarea name="textarea" id="mensaje" cols="30" rows="5" placeholder="Su Mensaje" class="p-4 bg-gray-100" required></textarea>
           </div>
           <button type="submit" formtarget="_blank" class="btn btn-dark hover:bg-terciary hover:text-white">Enviar</button>
-  
+
+          <!-- Este es el Subject predeterminado -->
           <input type="hidden" name="_subject" value="Nuevo correo desde la página web Anunciada.">
+
+          <!-- La forma está configurada de manera que se puede responder al mensaje y le llegará al correo recibido en el input -->
         </form>
 
-        <h3 class="pt-12 text-center">O bien, llámenos</h3>
+        <!-- Información de Contacto -->
+        <h3 class="pt-12 text-center">Llámenos</h3>
         <ul class="flex flex-col lg:flex-row gap-14 items-center mx-auto text-terciary text-3xl">
           <li><a href="tel:+(506) 2431-4914">+(506) 2431-4914</a></li>
           <li><a href="tel:+(506) 8389-3373">+(506) 8389-3373</a></li>
           <li><a href="mailto:ancila@ice.co.cr">ancila@ice.co.cr</a></li>
-        </ul> 
+        </ul>
+        
+        <!-- Mapa Clickeable -->
+        <h3 class="pt-12 text-center">O bien, visítenos</h3>
+        <a href="https://www.google.com/maps/place/10%C2%B000'53.9%22N+84%C2%B013'48.5%22W/@10.0149739,-84.2323368,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x0!8m2!3d10.0149739!4d-84.2301481?hl=en" target="_blank"><img src="img/MAPA.PNG" alt="Mapa"></a>
       </div>
     </section>
 

@@ -137,3 +137,15 @@ footer li {
   background: #183642;
   /* Color secondary */
 }
+
+/* CAROUSEL */
+
+.carousel-container {
+  width: 40%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.carousel-slide {
+  display: flex;
+}

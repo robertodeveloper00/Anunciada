@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="style.css" />
     <title>Anunciada</title>
   </head>
-  <!-- Class Order Best Practice (i.e,. 1. positioning/visibility 2. box model 3. borders 4. backgrounds 5. typography 6. other visual adjustments) -->
   <body class="font-paragraph">
     <!-- HEADER -->
     <header class="flex flex-col justify-between relative min-h-screen bg-custom-hero ">
@@ -73,7 +72,7 @@
       </nav>
 
       <!-- HERO MAIN ELEMENT -->
-      <div class="w-2/5 md:w-2/6 flex flex-col gap-6 md:items-start m-8 md:m-16 3xl:m-28">
+      <div class="w-2/5 md:w-2/6 flex flex-col gap-4 md:gap-6 md:items-start m-8 md:m-16 3xl:m-28">
         <h1 class="md:text-6xl lg:text-7xl">Vida Monástica Contemplativa</h1>
         
         <h4 class="text-white md:text-xl">
@@ -85,10 +84,10 @@
       </div>
     </header>
 
-    <!-- LANDING PAGE - quienesSomos -->
+    <!-- 1- QUIENES SOMOS -->
     <section class="bg-primary-light">
       <div class="container flex flex-col-reverse px-10 lg:flex-row gap-20 py-16 bg-primary-light">
-        <!-- lANDING PAGE - quienesSomos -- TEXT -->
+        <!-- Elemento Uno - Texto -->
         <div class="flex flex-col gap-4 md:items-start lg:mt-8">
           <h2 class="md:text-5xl">Quienes Somos</h2>
 
@@ -101,14 +100,14 @@
 
           <button class="btn btn-dark hover:bg-terciary hover:text-white"><a href="quienesSomos.html">Leer Más</a></button>
         </div>
-        <!-- lANDING PAGE - quienesSomos -- IMAGE -->
+        <!-- Elemento Dos - Imágen -->
         <img src="img/Quienes somos - Landing.png" alt="Quienes Somos"> 
       </div>
     </section>
 
-    <!-- LANDING PAGE - historia & comunidad -->
+    <!-- 2- HISTORIA & COMUNIDAD -->
     <section class="flex flex-col xl:flex-row p-4 gap-4 md:p-8 md:gap-8 bg-primary text-white">
-      <!-- LANDING PAGE - historia -->
+      <!-- Historia -->
       <div class="flex flex-col gap-6 p-11 md:p-32 md:items-start bg-custom-story">
         <h2 class="md:text-5xl">Historia de la Orden</h2>
 
@@ -119,7 +118,7 @@
         <button class="btn btn-light hover:bg-terciary hover:text-white"><a href="historia.html">Leer Más</a></button>
       </div>
 
-      <!-- LANDING PAGE - comunidad -->
+      <!-- Comunidad -->
       <div class="flex flex-col gap-6 p-11 md:p-32 md:items-start bg-custom-community ">
         <h2 class="md:text-5xl">Nuestra Comunidad</h2>
 
@@ -132,22 +131,24 @@
       </div>
     </section>
 
-    <!-- LANDING PAGE - JOIN US -->
+    <!-- 3- CONVIERTETE EN ANUNCIADA -->
     <section class="bg-primary-light">
       <div class="container flex flex-col gap-5 md:gap-12 px-10 py-16 items-center">
         <h2 class="md:text-5xl">Conviertete en Anunciada <span class="block mt-2 font-paragraph text-2xl md:text-center">una invitación a viajar siguiendo a los magos...</span></h2>
-
+        <!-- Elemento Uno -Texto -->
         <div class="flex flex-col lg:flex-row lg:gap-8">
           <div class="mt-4">
             <h3>Formación</h3>
             <p class="my-5">Acá podrás aprender más acerca de: <a href="formación.html#características">Las Características de la Trayectoria de Formación de una Anunciada</a>, <a href="formación.html#pasantía">La Pasantía de Observación</a>, <a href="#">Duración de las Etapas de Formación</a>, y <a href="formación.html#etapas">más</a></p>
           </div>
+          <!-- Elemento Dos  - Imágen -->
           <img src="img/Reyes Magos.jpeg" alt="Reyes Magos" class="w-full lg:w-1/2">
         </div>
+
       </div>
     </section>
 
-    <!-- LANDING PAGE - CONTACT -->
+    <!-- 4- CONTACTO -->
     <section class="grid grid-rows-2 justify-items-center py-0 md:py-10 bg-primary-light">
       <h2 class="md:text-5xl">¿A quién contactar?</h2>
       <p class="block text-2xl text-center">¿A quién hacer preguntas? <br> Con la madre María Ancila</p>
@@ -157,7 +158,6 @@
         <li><a href="tel:+(506) 8389-3373">+(506) 8389-3373</a></li>
         <li><a href="mailto:ancila@ice.co.cr">ancila@ice.co.cr</a></li>
       </ul> 
-
     </section>
 
     <!-- FOOTER -->
@@ -185,7 +185,7 @@
       </div>
     </footer>
 
-    <!-- Firma -->
+    <!-- FIRMA -->
     <p class="py-3 px-10 text-center lg:text-right text-base md:text-lg bg-primary"><i>Desarrollado por Roberto Barrientos para Lionix Evolve</i></p>
 
     <script src="script.js"></script>
